@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firestore</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body>
+  <button id="addMutant">Criar mutante</button>
+  <h1>Formulario legal para mandar paradas ao firebase</h1>
+  <form class="form" method="post">
+    <div>
+      <label for="name">name</label>
+      <input type="text" name="firstname" class="form-control" placeholder="nome" />
+    </div>
+    <div>
+      <label for="lastname">sobrenome</label>
+      <input type="text" name="lastname" placeholder="sobrenome">
+    </div>
+    <div>
+      <label for="age">idade</label>
+      <input type="text" name="age" placeholder="idade">
+    </div>
+    <div>
+      <input type="submit" name="enviar">
+    </div>
+  </form>
+  <br><br>
+  <button id="upload">Pega os resultados ai</button>
+  <div class="show">
+
+  </div>
+  <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>
